@@ -1,0 +1,52 @@
+product,version,date,prerelease,category,summary,url
+Consul,v2.0.3,2026-08-07,false,other,Update `brace-expansion` to address GHSA-rgw5-rvv9-x895 (DoS via unbounded intermediate arrays),https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,other,Update `fast-uri` to address GHSA-7p8r-x3mc-p8w7 (Host Confusion via backslash authority introducer),https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,other,Update `golang.org/x/text` to v0.39.0 to address GO-2026-5970,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,other,Update `google.golang.org/grpc` to v1.82.1 to address GHSA-hrxh-6v49-42gf,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,security,Update `socket.io-parser` to address CVE-2026-69185 (Zero-attachment Memory Exhaustion),https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,security,Upgrade to use Go `1.26.5`. This resolves vulnerabilities,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,security,Agent: Fixed a denial-of-service vulnerability where `GET /v1/agent/connect/ca/roots`,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,fix,Agent: Fixed a nil-pointer dereference panic in `ShadowServiceRouterConfigEntry.CheckEnt`,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,security,Agent: Fixed a security bypass where a user-supplied public listener,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,security,Agent: Fixed an unauthenticated denial-of-service vulnerability where,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,security,Agent: Fixed an unauthenticated denial-of-service vulnerability where the external gRPC,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,other,"Ui: migrate yadda/Gherkin acceptance tests to native QUnit (harness, intentions/create, components, settings)",https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,feature,"Xds: Add two new opt-in `ProxyDefaults.spec.config` keys for controlling the `server` response header on API Gateway HTTP listeners: `envoy_suppress_envoy_headers` (removes the header entirely) and `envoy_server_header_name` (renames it to a custom value). If both are set, suppress takes precedence",https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,other,Agent: Stop logging the raw ACL token in debug-level content-type logs,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,fix,"Api-gateway: Fixed a regression that caused an HTTP API gateway to reject its configuration with an ""inconsistent protocols"" error (resulting in intermittent 503s) when a backend service's `service-router` composed a route to a destination in a different service, namespace, or partition during discovery-chain synthesis",https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,other,"Serf: Fix WAN flood-join to ignore non-alive destination members (leaving/left/failed), allowing rejoined servers to heal back to alive in WAN membership",https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Consul,v2.0.3,2026-08-07,false,other,Xds: Addition of XFCC headers to GPRC request similar to HTTP request for connect-proxy inbound listener,https://github.com/hashicorp/consul/releases/tag/v2.0.3
+Nomad,v2.0.5,2026-08-13,false,breaking,Plugin: The `DriverNetwork.Hash` method has been removed from the `plugin/drivers` package,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Build: Update Go to v1.26.5,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Checks: Nomad native service check IDs are now SHA256,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,feature,Cli: add `-json-output` and `-t` flags to `nomad job plan` for structured plan output,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Consul: Added the issuing Nomad client's node ID to the metadata of Consul tokens created via workload identity,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Consul: Check IDs are now derived from SHA256 instead of SHA1,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,breaking,"Jobspec: Removed the requirement that a variable validation `error_message` be a full English sentence, allowing messages written in any language",https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Planner: Added plan_apply_pipeline configuration that allows the leader to have more outstanding Raft writes when evaluating plans,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Services: rendezvous hashes are now SHA256,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,feature,Template: Add `run_on_first_render` option to `change_script` to execute scripts on the initial template render via the task Poststart lifecycle hook,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Agent: Fixed a bug where the startup banner would display the wrong node ID for servers after restart,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Api: Fixed a bug where the client allocation endpoints returned a 500 error instead of a 404 when the allocation's node could not be found,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Auth: Fixed a bug where nodes could not sync allocations placed on them after being moved to a different node pool,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Cli: Fixed a bug where `nomad operator root keyring remove` would not accept an abbreviated key ID,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Client: Fix issue where deleted allocations may remain running,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Client: Fixed a bug where a client could panic after an alloc is GC'd,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Client: Fixed a bug where the client would not remount the secret and private tmpfs after a restart,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Client: Fixed a bug where the previous allocation watcher would retry forever when the server returned a permanent error during data migration,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Csi: Fixed a bug where evals blocked on missing CSI volumes would not unblock,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Deployments: Fix garbage collection to respect threshold,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Docker: Fixed a bug where tasks could execute outside of their assigned cpuset range,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Drivers/java: Fixed a bug where the Java driver did not correctly decode the `work_dir` option,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Jobspec: Fixed a bug where a negative `cores` value in a task's resource block was accepted during job validation and registration,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Quota (Enterprise): Fixed a bug where disabling the use of cores in a quota would block the ability to use either cores or CPU in a job,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Scheduler: Ensure deployment IDs are not written to an evaluation when the generated deployment is not persisted to state due to plan apply retries,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Scheduler: Fixed a bug where the scheduler could panic with a nil pointer dereference when checking host volume feasibility for an allocation whose job had been purged,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Secrets: Fixed hooks to allow refetch during prestart,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,"Services: Fixed a bug where task secrets were not interpolated into service check `Header` and `Args`, or into service `Tags`",https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Ui: Fixed SSO sign in display not displaying when SSO enabled,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,"Ui: Fixed a bug where the job status panel would show ""Complete"" instead of ""Scaled Down"" for system and sysbatch jobs with zero allocations",https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Ui: Fixed the region identifier header showing as empty in single region clusters,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,fix,Ui: Fixed version diff display and missing deployment version numbers,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Ui: check websocket upgrade headers with multiple values,https://github.com/hashicorp/nomad/releases/tag/v2.0.5
+Nomad,v2.0.5,2026-08-13,false,other,Ui: refetch nomad license when logging in with new token,https://github.com/hashicorp/nomad/releases/tag/v2.0.5

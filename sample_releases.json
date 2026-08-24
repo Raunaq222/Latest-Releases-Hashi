@@ -1,0 +1,56 @@
+{
+  "_comment": "SYNTHETIC sample data for offline demo only. Not real HashiCorp releases. Delete this file once you run with a real GITHUB_TOKEN.",
+  "hashicorp/boundary": [
+    {
+      "tag_name": "v0.19.2",
+      "published_at": "2026-08-14T10:04:00Z",
+      "prerelease": false,
+      "html_url": "https://github.com/hashicorp/boundary/releases/tag/v0.19.2",
+      "body": "## Changelog\n\n- **workers**: Adds support for multi-hop session routing through nested worker chains ([#4821](https://github.com/hashicorp/boundary/pull/4821))\n- **auth**: Now supports OIDC claim-based role mapping without a custom filter ([#4830](https://github.com/hashicorp/boundary/pull/4830))\n- Fixed a panic when a target alias resolved to a deleted host set [GH-4844]\n- **security**: Session credentials are no longer written to debug-level logs (CVE-2026-1188)\n- Deprecated the `-format=table` flag on `boundary sessions list`; use `-format=json`\n- Full changelog: https://github.com/hashicorp/boundary/compare/v0.19.1...v0.19.2\n"
+    },
+    {
+      "tag_name": "v0.19.1",
+      "published_at": "2026-07-31T16:22:00Z",
+      "prerelease": false,
+      "html_url": "https://github.com/hashicorp/boundary/releases/tag/v0.19.1",
+      "body": "- Fixed intermittent connection resets when a worker restarts mid-session ([#4802](https://github.com/hashicorp/boundary/pull/4802))\n- **cli**: Adds `--recursive` to `boundary scopes list`\n"
+    }
+  ],
+  "hashicorp/nomad": [
+    {
+      "tag_name": "v1.11.3",
+      "published_at": "2026-08-18T09:15:00Z",
+      "prerelease": false,
+      "html_url": "https://github.com/hashicorp/nomad/releases/tag/v1.11.3",
+      "body": "## IMPROVEMENTS\n\n- **scheduler**: Adds preemption support for system jobs in namespaced clusters ([#20114](https://github.com/hashicorp/nomad/pull/20114))\n- **ui**: Now supports filtering the allocations table by client node class\n\n## BUG FIXES\n\n- Fixed a memory leak in the CSI plugin supervisor on repeated volume detach [GH-20130]\n- Resolves an issue where `nomad job plan` reported spurious diffs on empty meta blocks\n"
+    }
+  ],
+  "hashicorp/packer": [
+    {
+      "tag_name": "v1.13.0",
+      "published_at": "2026-08-06T13:40:00Z",
+      "prerelease": false,
+      "html_url": "https://github.com/hashicorp/packer/releases/tag/v1.13.0",
+      "body": "- **hcl2**: Adds `dynamic` blocks inside `source` definitions ([#13402](https://github.com/hashicorp/packer/pull/13402))\n- Breaking: removed the legacy JSON template parser deprecated in 1.9\n- Fixed plugin checksum verification failing behind proxies that rewrite content-length\n"
+    }
+  ],
+  "hashicorp/waypoint": [],
+  "hashicorp/vagrant": [
+    {
+      "tag_name": "v2.5.4",
+      "published_at": "2026-08-11T18:02:00Z",
+      "prerelease": false,
+      "html_url": "https://github.com/hashicorp/vagrant/releases/tag/v2.5.4",
+      "body": "- Fixed synced folder permissions on rootless Podman providers [GH-13588]\n- **security**: Updated bundled curl to address CVE-2026-0994\n"
+    }
+  ],
+  "hashicorp/consul": [
+    {
+      "tag_name": "v1.22.1",
+      "published_at": "2026-08-20T11:30:00Z",
+      "prerelease": false,
+      "html_url": "https://github.com/hashicorp/consul/releases/tag/v1.22.1",
+      "body": "- **mesh**: Adds automatic mTLS certificate rotation for external services ([#22540](https://github.com/hashicorp/consul/pull/22540))\n- Fixed a race condition in the catalog sync loop under high node churn\n"
+    }
+  ]
+}
